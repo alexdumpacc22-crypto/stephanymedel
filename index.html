@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephany Medel <3</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Background Image */
+body{
+    background:
+        linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+        url("girl1.png") center center/cover no-repeat;
+}
+
+/* Text Layer */
+.wall{
+    position:fixed;
+    inset:0;
+
+    padding:15px;
+
+    color:#ffffff;
+
+    font-size:10px;
+    font-weight:700;
+    text-transform:uppercase;
+
+    line-height:1.2;
+    letter-spacing:.25px;
+
+    opacity:.65;
+
+    overflow:hidden;
+    word-break:break-word;
+
+    pointer-events:none;
+    user-select:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="wall" id="wall"></div>
+
+<script>
+
+const quote = `
+STEPHANY MEDEL, YOU ARE THE KIND OF PERSON WHO MAKES ORDINARY DAYS FEEL EXTRAORDINARY.
+YOUR SMILE HAS A WAY OF BRIGHTENING THE DARKEST MOMENTS.
+YOUR KINDNESS, BEAUTY, AND GENUINE HEART MAKE YOU TRULY ONE OF A KIND.
+EVERY MOMENT WITH YOU FEELS LIKE A BEAUTIFUL MEMORY IN THE MAKING.
+YOU INSPIRE HAPPINESS WITHOUT EVEN TRYING.
+MAY YOU ALWAYS REMEMBER HOW SPECIAL, LOVED, AND APPRECIATED YOU ARE.
+YOUR LAUGHTER IS MY FAVORITE MELODY.
+YOUR EYES HOLD A THOUSAND BEAUTIFUL STORIES.
+EVERY SUNRISE REMINDS ME OF NEW BEGINNINGS, BUT EVERY THOUGHT OF YOU REMINDS ME OF HOME.
+IF I COULD CHOOSE A PERSON TO ADMIRE EVERY SINGLE DAY, IT WOULD ALWAYS BE YOU.
+STEPHANY MEDEL, YOU ARE MY FAVORITE CHAPTER, MY SWEETEST THOUGHT, AND MY HAPPIEST HELLO.
+NO MATTER HOW MANY STARS FILL THE SKY, YOU WILL ALWAYS SHINE THE BRIGHTEST.
+YOU MAKE LIFE MORE BEAUTIFUL JUST BY BEING IN IT.
+YOUR HEART IS AS BEAUTIFUL AS YOUR SMILE.
+THANK YOU FOR BEING THE WONDERFUL PERSON THAT YOU ARE.
+I HOPE YOUR DAYS ARE FILLED WITH HAPPINESS, PEACE, AND LOVE.
+STEPHANY MEDEL, YOU ARE TRULY AMAZING.
+`;
+
+const wall = document.getElementById("wall");
+
+let output = "";
+
+while(output.length < 500000){
+    output += quote + " ";
+}
+
+wall.textContent = output;
+
+</script>
+
+</body>
+</html>
