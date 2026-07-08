@@ -1,166 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Stephany Medel ❤️</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stephany Medel <3</title>
+  </head>
+  <style>
+    h2 {
+  font-size: 2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(65, 20, 37);
+  text-shadow: -2px 1px 10px rgb(255, 180, 193);
+  position: absolute;
+  z-index: 100;
+  left: 34%;
+  top: 50%;
+  opacity: 0.9;
+}
+.back {
+  background-image: url('girl1.png');
+  position: fixed;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: back;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+.love {
+  position: absolute;
+  background-color: rgb(207, 105, 112);
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+  animation-name: love;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.love::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(207, 105, 112);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  top: -125px;
+  left: 0px;
+}
+.love::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(207, 105, 112);
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  left: 125px;
+  top: 0px;
 }
 
-html,
-body{
-    width:100%;
-    height:100%;
-    overflow:hidden;
-    font-family:Arial, Helvetica, sans-serif;
+@keyframes back {
+  50% {
+    background: rgb(250, 211, 214);
+  }
+}
+@keyframes love {
+  50% {
+    transform: scale(0.3) rotate(-45deg);
+  }
+}
+/*love-1*/
+.love-1 {
+  position: absolute;
+  background-color: rgb(231, 132, 139);
+  width: 125px;
+  height: 125px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+  animation-name: love-1;
+  animation-duration: 2s;
+  animation-delay: 1.7s;
+  animation-iteration-count: infinite;
+}
+.love-1::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(231, 132, 139);
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  top: -62.5px;
+  left: 0px;
+}
+.love-1::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(231, 132, 139);
+  border-radius: 50%;
+  width: 125px;
+  height: 125px;
+  left: 62.5px;
+  top: 0px;
 }
 
-/* Main Body */
-body{
-    position:relative;
-    background:#000;
+@keyframes love-1 {
+  50% {
+    transform: scale(0.5) rotate(-45deg);
+  }
+}
+/*love-2*/
+.love-2 {
+  position: absolute;
+  background-color: pink;
+  width: 62.5px;
+  height: 62.5px;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform: rotate(-45deg);
+  animation-name: love-2;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.love-2::before {
+  content: "";
+  position: absolute;
+  background-color: pink;
+  border-radius: 50%;
+  width: 62.5px;
+  height: 62.5px;
+  top: -31.25px;
+  left: 0px;
+}
+.love-2::after {
+  content: "";
+  position: absolute;
+  background-color: pink;
+  border-radius: 50%;
+  width: 62.5px;
+  height: 62.5px;
+  left: 31.25px;
+  top: 0px;
 }
 
-/* Background Image */
-body::before{
-    content:"";
-    position:fixed;
-    inset:0;
-
-    background:
-        linear-gradient(rgba(0,0,0,.30), rgba(0,0,0,.30)),
-        url("girl1.png");
-
-    background-size:cover;
-    background-position:center center;
-    background-repeat:no-repeat;
-
-    z-index:-1;
+@keyframes love-2 {
+  50% {
+    transform: scale(1.25) rotate(-45deg);
+  }
 }
 
-/* Text Wall */
-.wall{
-    position:fixed;
-    inset:0;
-
-    padding:15px;
-
-    color:#fff;
-
-    font-size:10px;
-    font-weight:700;
-
-    text-transform:uppercase;
-
-    line-height:1.2;
-    letter-spacing:.25px;
-
-    opacity:.45;
-
-    overflow:hidden;
-    word-break:break-word;
-
-    user-select:none;
-    pointer-events:none;
-}
-
-/* Tablet */
-@media (max-width:1024px){
-
-    body::before{
-        background-position:center center;
-        background-size:cover;
-    }
-
-    .wall{
-        font-size:9px;
-        line-height:1.15;
-        opacity:.42;
-    }
-
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-    body::before{
-        background-position:center top;
-        background-size:cover;
-    }
-
-    .wall{
-        padding:10px;
-        font-size:7px;
-        line-height:1.08;
-        letter-spacing:.15px;
-        opacity:.35;
-    }
-
-}
-
-/* Small Phones */
-@media (max-width:480px){
-
-    body::before{
-        background-position:center top;
-        background-size:cover;
-    }
-
-    .wall{
-        padding:8px;
-        font-size:6px;
-        line-height:1.05;
-        opacity:.28;
-    }
-
-}
-
-</style>
-
-</head>
-<body>
-
-<div class="wall" id="wall"></div>
-
-<script>
-
-const quote = `
-STEPHANY MEDEL, YOU ARE THE KIND OF PERSON WHO MAKES ORDINARY DAYS FEEL EXTRAORDINARY.
-YOUR SMILE HAS A WAY OF BRIGHTENING THE DARKEST MOMENTS.
-YOUR KINDNESS, BEAUTY, AND GENUINE HEART MAKE YOU TRULY ONE OF A KIND.
-EVERY MOMENT WITH YOU FEELS LIKE A BEAUTIFUL MEMORY IN THE MAKING.
-YOU INSPIRE HAPPINESS WITHOUT EVEN TRYING.
-MAY YOU ALWAYS REMEMBER HOW SPECIAL, LOVED, AND APPRECIATED YOU ARE.
-YOUR LAUGHTER IS MY FAVORITE MELODY.
-YOUR EYES HOLD A THOUSAND BEAUTIFUL STORIES.
-EVERY SUNRISE REMINDS ME OF NEW BEGINNINGS, BUT EVERY THOUGHT OF YOU REMINDS ME OF HOME.
-IF I COULD CHOOSE A PERSON TO ADMIRE EVERY SINGLE DAY, IT WOULD ALWAYS BE YOU.
-STEPHANY MEDEL, YOU ARE MY FAVORITE CHAPTER, MY SWEETEST THOUGHT, AND MY HAPPIEST HELLO.
-NO MATTER HOW MANY STARS FILL THE SKY, YOU WILL ALWAYS SHINE THE BRIGHTEST.
-YOU MAKE LIFE MORE BEAUTIFUL JUST BY BEING IN IT.
-YOUR HEART IS AS BEAUTIFUL AS YOUR SMILE.
-THANK YOU FOR BEING THE WONDERFUL PERSON THAT YOU ARE.
-I HOPE YOUR DAYS ARE FILLED WITH HAPPINESS, PEACE, AND LOVE.
-STEPHANY MEDEL, YOU ARE TRULY AMAZING.
-`;
-
-const wall = document.getElementById("wall");
-
-let output = "";
-
-while(output.length < 500000){
-    output += quote + " ";
-}
-
-wall.textContent = output;
-
-</script>
-
-</body>
+  </style>
+  <body>
+    <h2>My heart when i see you!</h2>
+    <!-- for more code, visit my tiktok account -->
+    <!-- tiktok "meowish" -->
+    <div class="back"></div>
+    <div class="love"></div>
+    <div class="love-1"></div>
+    <div class="love-2"></div>
+  </body>
 </html>
